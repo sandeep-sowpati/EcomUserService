@@ -14,7 +14,6 @@ public class Session extends BaseModel{
     @JoinColumn(name = "user_id")
     private User user;
     private String token;
-
     private Date loggedInAt;
     private Date loggedOutAt;
     @Enumerated(EnumType.ORDINAL)
